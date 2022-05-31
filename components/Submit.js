@@ -16,7 +16,7 @@ const Submit = () => {
         e.preventDefault()
         const { name, vehiclename, vehiclenumber, phonenumber } = customer
 
-        const res = await fetch("/api/customers", {
+        const res = await fetch("https://my-app345.herokuapp.com/api/customers", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
